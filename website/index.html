@@ -123,72 +123,23 @@
     </div>
   </section>
 
-  <!-- PRICING with interactive SVG face plans -->
+  <!-- PRICING static visual -->
   <section class="bg-light" id="tarifs">
     <div class="container">
-      <div class="section-header center reveal"><div class="section-label" data-i18n="price_label">Tarifs</div><h2 class="section-title" data-i18n="price_title">Nos <strong>tarifs</strong></h2><p class="section-subtitle" data-i18n="price_subtitle">Sélectionnez une zone pour découvrir le tarif correspondant.</p></div>
+      <div class="section-header center reveal"><div class="section-label" data-i18n="price_label">Tarifs</div><h2 class="section-title" data-i18n="price_title">Nos <strong>tarifs</strong></h2><p class="section-subtitle" data-i18n="price_subtitle">Découvrez les zones traitées et les fourchettes tarifaires associées dans une lecture simple, claire et haut de gamme.</p></div>
       <div class="pricing-layout reveal">
-        <!-- Interactive SVG Face Plans -->
-        <div class="face-plans-container">
-          <div class="face-plans">
-            <!-- FRONT VIEW -->
-            <div class="face-plan">
-              <h4>Vue de face</h4>
-              <svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="face-svg">
-                <!-- Head outline -->
-                <path d="M150 30 C95 30 55 70 50 130 C47 165 48 190 55 220 C60 240 70 265 85 285 C100 305 120 330 150 345 C180 330 200 305 215 285 C230 265 240 240 245 220 C252 190 253 165 250 130 C245 70 205 30 150 30Z" fill="#3A3C3E" stroke="#62666A" stroke-width="1"/>
-                <!-- Zone: Top of head (Effet Rasé/Densité) -->
-                <path class="face-zone" data-zone="density" d="M150 32 C100 32 65 65 57 120 L100 125 C105 80 125 55 150 50 C175 55 195 80 200 125 L243 120 C235 65 200 32 150 32Z" fill="#4E5153" stroke="#62666A" stroke-width="0.5"/>
-                <!-- Zone: Frontal / Temples -->
-                <path class="face-zone" data-zone="frontal" d="M57 120 L100 125 L95 165 L52 160 C49 145 48 132 57 120Z" fill="#4E5153" stroke="#62666A" stroke-width="0.5"/>
-                <path class="face-zone" data-zone="frontal" d="M243 120 L200 125 L205 165 L248 160 C251 145 252 132 243 120Z" fill="#4E5153" stroke="#62666A" stroke-width="0.5"/>
-                <!-- Zone: Crown -->
-                <ellipse class="face-zone" data-zone="crown" cx="150" cy="80" rx="50" ry="30" fill="#4E5153" stroke="#62666A" stroke-width="0.5"/>
-                <!-- Facial features (non-interactive) -->
-                <ellipse cx="120" cy="185" rx="15" ry="8" fill="#2E3032"/>
-                <ellipse cx="180" cy="185" rx="15" ry="8" fill="#2E3032"/>
-                <path d="M143 230 Q150 242 157 230" stroke="#62666A" stroke-width="1.5" fill="none"/>
-                <path d="M125 270 Q150 282 175 270" stroke="#787C7E" stroke-width="1" fill="none"/>
-                <!-- Zone labels -->
-                <text x="150" y="72" text-anchor="middle" fill="#C5A55A" font-family="Outfit,sans-serif" font-size="9" font-weight="500" letter-spacing="1">VERTEX</text>
-                <text x="150" y="110" text-anchor="middle" fill="#A4A8AB" font-family="Outfit,sans-serif" font-size="8" letter-spacing="0.5">ZONES 1-3</text>
-                <text x="68" y="148" text-anchor="middle" fill="#A4A8AB" font-family="Outfit,sans-serif" font-size="7" transform="rotate(-20,68,148)">ZONE FRONTALE</text>
-                <text x="232" y="148" text-anchor="middle" fill="#A4A8AB" font-family="Outfit,sans-serif" font-size="7" transform="rotate(20,232,148)">ZONE FRONTALE</text>
-              </svg>
-            </div>
-            <!-- SIDE VIEW -->
-            <div class="face-plan">
-              <h4>Vue de profil</h4>
-              <svg viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="face-svg">
-                <!-- Head profile outline -->
-                <path d="M180 35 C130 30 90 55 75 100 C65 130 60 160 65 195 C68 215 80 245 95 270 C110 295 130 315 155 340 L165 340 C175 325 185 300 195 275 C210 245 220 210 225 175 C230 140 225 105 210 75 C200 55 190 40 180 35Z" fill="#3A3C3E" stroke="#62666A" stroke-width="1"/>
-                <!-- Zone: Top/Back (scars) -->
-                <path class="face-zone" data-zone="scars" d="M180 37 C200 45 215 65 222 95 C228 120 228 145 225 170 L195 165 C198 140 198 115 195 90 C190 68 185 50 180 37Z" fill="#4E5153" stroke="#62666A" stroke-width="0.5"/>
-                <!-- Zone: Top of head -->
-                <path class="face-zone" data-zone="density" d="M180 37 C145 32 110 50 90 80 C80 100 72 125 70 150 L105 150 C108 125 115 100 128 80 C140 62 158 45 180 37Z" fill="#4E5153" stroke="#62666A" stroke-width="0.5"/>
-                <!-- Zone: Small surface (temple area) -->
-                <ellipse class="face-zone" data-zone="small" cx="85" cy="165" rx="20" ry="25" fill="#4E5153" stroke="#62666A" stroke-width="0.5"/>
-                <!-- Ear -->
-                <ellipse cx="220" cy="185" rx="12" ry="22" fill="#3A3C3E" stroke="#62666A" stroke-width="1"/>
-                <!-- Eye -->
-                <ellipse cx="105" cy="190" rx="12" ry="6" fill="#2E3032"/>
-                <!-- Nose -->
-                <path d="M70 200 Q60 230 75 245" stroke="#62666A" stroke-width="1.5" fill="none"/>
-                <!-- Labels -->
-                <text x="140" y="68" text-anchor="middle" fill="#A4A8AB" font-family="Outfit,sans-serif" font-size="8" letter-spacing="0.5">DESSUS</text>
-                <text x="210" y="120" text-anchor="middle" fill="#C5A55A" font-family="Outfit,sans-serif" font-size="8" letter-spacing="0.5">CICATRICES</text>
-                <text x="85" y="200" text-anchor="middle" fill="#A4A8AB" font-family="Outfit,sans-serif" font-size="7">TEMPES</text>
-              </svg>
-            </div>
+        <div class="pricing-visual-container">
+          <div class="pricing-visual-frame">
+            <img src="img/pricing-visual-premium.png" alt="Cartographie premium des zones de micropigmentation capillaire" class="pricing-visual-image" loading="lazy">
           </div>
-          <p class="face-plans-instruction" data-i18n="price_head_instruction">Sélectionnez une zone pour voir le tarif</p>
         </div>
-        <!-- Pricing cards -->
         <div class="pricing-cards">
-          <div class="pricing-card" data-zone="density"><div class="pricing-card-header"><h3 data-i18n="price_1_title">Effet Rasé ou Densité</h3><div class="pricing-tag" data-i18n="price_1_price">300 € à 2 000 €</div></div><p class="pricing-card-zones" data-i18n="price_1_zones">Zones 1 à 3</p><p data-i18n="price_1_desc">Selon le travail à réaliser et les zones à restaurer.</p></div>
-          <div class="pricing-card" data-zone="frontal"><div class="pricing-card-header"><h3 data-i18n="price_2_title">Zone frontale et cicatrices de greffe FUE / FUT</h3><div class="pricing-tag" data-i18n="price_2_price">450 € à 1 300 €</div></div><p data-i18n="price_2_desc">Restauration de la zone frontale et des cicatrices post-opératoires pour un résultat naturel.</p></div>
-          <div class="pricing-card" data-zone="crown"><div class="pricing-card-header"><h3 data-i18n="price_3_title">Haut du cuir chevelu + cicatrices post-greffe</h3><div class="pricing-tag" data-i18n="price_3_price">Sur devis</div></div><p data-i18n="price_3_desc">Restauration du haut du cuir chevelu et des cicatrices post-greffe.</p></div>
-          <div class="pricing-card" data-zone="small"><div class="pricing-card-header"><h3 data-i18n="price_4_title">Petites surfaces & Densification</h3><div class="pricing-tag" data-i18n="price_4_price">Sur devis</div></div><p data-i18n="price_4_desc">Traitement ciblé des petites zones et solutions de densification adaptées à tous.</p></div>
+          <div class="pricing-card"><div class="pricing-card-header"><h3>Zones 1 à 3 / Effet rasé / Densité</h3><div class="pricing-tag">300 € à 2 000 €</div></div><p class="pricing-card-zones">Micropigmentation capillaire</p><p>Selon le travail à réaliser et les zones à restaurer.</p></div>
+          <div class="pricing-card"><div class="pricing-card-header"><h3>Zone frontale</h3><div class="pricing-tag">450 € à 1 300 €</div></div><p class="pricing-card-zones">Redéfinition de la ligne frontale</p><p>Restauration naturelle de la ligne frontale pour restructurer le visage et recréer un effet rasé réaliste.</p></div>
+          <div class="pricing-card"><div class="pricing-card-header"><h3>Cicatrices FUE / FUT</h3><div class="pricing-tag">550 € à 1 500 €</div></div><p class="pricing-card-zones">Camouflage de cicatrices post-greffe</p><p>Camouflage des cicatrices post-greffe pour uniformiser visuellement la zone traitée.</p></div>
+          <div class="pricing-card"><div class="pricing-card-header"><h3>Dessus du cuir chevelu + cicatrices post-greffe</h3><div class="pricing-tag">Sur devis</div></div><p class="pricing-card-zones">Traitement global</p><p>Traitement global du dessus du cuir chevelu combiné à la correction des cicatrices.</p></div>
+          <div class="pricing-card"><div class="pricing-card-header"><h3>Petites surfaces</h3><div class="pricing-tag">Sur devis</div></div><p class="pricing-card-zones">Correction localisée</p><p>Correction ciblée de zones localisées selon la surface et le niveau de travail.</p></div>
+          <div class="pricing-card"><div class="pricing-card-header"><h3>Densification diffuse</h3><div class="pricing-tag">Sur devis</div></div><p class="pricing-card-zones">Densification visuelle</p><p>Solution adaptée aux zones clairsemées pour renforcer la densité visuelle de manière naturelle.</p></div>
           <div class="pricing-note"><h4 data-i18n="price_payment_title">Modalités de paiement</h4><p data-i18n="price_payment_desc">Le paiement peut être effectué au comptant ou en plusieurs fois, réparti sur votre procédure. Un acompte est demandé afin de bloquer la procédure.</p></div>
         </div>
       </div>
@@ -262,37 +213,6 @@
   <script src="js/translations.js"></script>
   <script src="js/main.js"></script>
   <script>
-  // Interactive face zone pricing
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.face-zone').forEach(zone => {
-      zone.addEventListener('mouseenter', () => {
-        const zoneId = zone.dataset.zone;
-        document.querySelectorAll('.face-zone').forEach(z => z.classList.toggle('active', z.dataset.zone === zoneId));
-        document.querySelectorAll('.pricing-card').forEach(c => c.classList.toggle('active', c.dataset.zone === zoneId));
-      });
-      zone.addEventListener('mouseleave', () => {
-        document.querySelectorAll('.face-zone').forEach(z => z.classList.remove('active'));
-        document.querySelectorAll('.pricing-card').forEach(c => c.classList.remove('active'));
-      });
-      zone.addEventListener('click', () => {
-        const zoneId = zone.dataset.zone;
-        const card = document.querySelector(`.pricing-card[data-zone="${zoneId}"]`);
-        if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      });
-    });
-    // Reverse: cards highlight zones
-    document.querySelectorAll('.pricing-card').forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        const z = card.dataset.zone;
-        document.querySelectorAll('.face-zone').forEach(fz => fz.classList.toggle('active', fz.dataset.zone === z));
-        card.classList.add('active');
-      });
-      card.addEventListener('mouseleave', () => {
-        document.querySelectorAll('.face-zone').forEach(fz => fz.classList.remove('active'));
-        card.classList.remove('active');
-      });
-    });
-  });
   </script>
 </body>
 </html>
