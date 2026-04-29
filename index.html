@@ -6,10 +6,13 @@
   <title>Scalpcare — Micropigmentation Capillaire | Paris & Barcelona</title>
   <meta name="description" content="Scalpcare, expert en tricopigmentation à Paris et Barcelone. Restauration capillaire non chirurgicale.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/logo.png">
 
   <style>
-    .blog-grid.blog-grid-premium { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+    .blog-grid.blog-grid-premium { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
     .blog-card-excerpt { margin: 0; color: var(--text-light); line-height: 1.75; min-height: 0; }
     .blog-card-actions { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:auto; }
     .blog-card-link.is-button { padding: 0; border: 0; background: transparent; cursor: pointer; font: inherit; }
@@ -30,24 +33,6 @@
     .blog-modal-body p, .blog-modal-body ul, .blog-modal-body ol { margin: 0; }
     .blog-modal-body ul, .blog-modal-body ol { padding-left: 20px; display:grid; gap:10px; }
     .blog-modal-body strong { color: #11161B; }
-
-    .kit-highlight { padding-top: 0; }
-    .kit-highlight-card { display:grid; grid-template-columns: minmax(0,1.15fr) minmax(280px,.85fr); gap: 24px; padding: 34px; border-radius: 28px; border: 1px solid rgba(197,165,90,.16); background: linear-gradient(180deg, #FFFDF7 0%, #FFFFFF 100%); box-shadow: 0 24px 70px rgba(0,0,0,.10); overflow: hidden; position: relative; }
-    .kit-highlight-card::before { content:''; position:absolute; inset:0; background: radial-gradient(circle at top right, rgba(197,165,90,.09), transparent 34%); pointer-events:none; }
-    .kit-highlight-copy, .kit-highlight-aside { position: relative; z-index: 1; }
-    .kit-highlight-copy { display:grid; gap:16px; }
-    .kit-highlight-kicker { display:inline-flex; width: fit-content; padding: 8px 12px; border-radius: 999px; background: rgba(197,165,90,.12); color:#e5cf95; border: 1px solid rgba(197,165,90,.22); font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; }
-    .kit-highlight-title { margin:0; font-size: clamp(1.8rem, 3vw, 2.7rem); line-height:1.12; color:#11161B; font-family: var(--font-display); font-weight:800; }
-    .kit-highlight-text { margin:0; color:#57606A; line-height:1.8; }
-    .kit-highlight-points { display:grid; gap:12px; margin:0; }
-    .kit-point { display:flex; gap:12px; align-items:flex-start; padding:14px 16px; border-radius:18px; background: rgba(197,165,90,.04); border:1px solid rgba(197,165,90,.12); }
-    .kit-point-icon { flex:0 0 30px; width:30px; height:30px; border-radius:999px; display:grid; place-items:center; background: rgba(197,165,90,.14); color:#e5cf95; border:1px solid rgba(197,165,90,.18); }
-    .kit-point strong { display:block; margin-bottom:4px; color:#11161B; }
-    .kit-point span { color:#5E6772; line-height:1.7; }
-    .kit-highlight-aside { border-radius:24px; border:1px solid rgba(197,165,90,.12); background: linear-gradient(180deg, #FFFFFF 0%, #FBF7EE 100%); padding:24px; display:grid; align-content:start; gap:16px; }
-    .kit-aside-title { margin:0; color:#11161B; font-size:1.05rem; font-weight:800; }
-    .kit-aside-list { margin:0; padding-left:18px; display:grid; gap:10px; color:#5E6772; line-height:1.75; }
-    .kit-aside-note { margin:0; padding-top:14px; border-top:1px solid rgba(197,165,90,.12); color:#5E6772; line-height:1.7; }
 
     @media (max-width: 1080px) {
       .blog-grid.blog-grid-premium { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
@@ -175,13 +160,206 @@
       }
     }
 
-      .hero.hero-photo .hero-content{
-        max-width:100%;
-        padding-top:136px;
-        padding-bottom:92px;
+    /* === HERO TITLE — EDITORIAL PREMIUM (Cormorant Garamond) === */
+    .hero.hero-photo .hero-title,
+    .hero.hero-photo h1,
+    .hero.hero-photo .hero-content h1 {
+      font-family: 'Cormorant Garamond', 'Didot', Georgia, serif !important;
+      font-size: clamp(2.4rem, 3.8vw, 4rem) !important;
+      font-weight: 700 !important;
+      line-height: 1.16 !important;
+      letter-spacing: -0.01em !important;
+      max-width: 600px !important;
+      text-wrap: balance;
+      margin-bottom: 32px !important;
+    }
+    .hero-title-line1 {
+      display: block;
+      font-weight: 700;
+      color: var(--text-on-dark);
+    }
+    .hero-title-line2 {
+      display: block;
+      font-size: 0.52em;
+      font-weight: 400;
+      color: rgba(200,200,200,0.80);
+      margin-top: 18px;
+      line-height: 1.55;
+      font-style: italic;
+      letter-spacing: 0.01em;
+    }
+
+    /* === MOBILE HERO — plus compact === */
+    @media (max-width: 720px) {
+      .hero.hero-photo {
+        min-height: 72svh !important;
       }
-      .hero.hero-photo .hero-stats{
-        background:rgba(16,19,24,.26);
+      .hero.hero-photo .hero-content {
+        padding-top: 18px !important;
+        padding-bottom: 26px !important;
+      }
+      .hero.hero-photo .hero-title,
+      .hero.hero-photo h1,
+      .hero.hero-photo .hero-content h1 {
+        font-size: clamp(1.7rem, 6.5vw, 2.2rem) !important;
+        max-width: none !important;
+        margin-bottom: 22px !important;
+      }
+      .hero-title-line2 {
+        font-size: 0.62em;
+        margin-top: 10px;
+      }
+      .hero-cta {
+        margin-bottom: 28px !important;
+      }
+    }
+
+    /* === BRAND STATEMENT — compact mobile === */
+    @media (max-width: 720px) {
+      .brand-statement {
+        padding: 56px 0 !important;
+      }
+      .brand-statement blockquote {
+        font-size: clamp(1.0rem, 4vw, 1.25rem) !important;
+        line-height: 1.65 !important;
+      }
+      .brand-statement .section-subtitle {
+        font-size: 0.88rem !important;
+        line-height: 1.65 !important;
+      }
+      .brand-statement-divider {
+        margin: 22px auto !important;
+      }
+    }
+
+    /* === SERVICES — images procédures === */
+    .service-interactive-item {
+      display: flex !important;
+      gap: 28px !important;
+      align-items: center !important;
+    }
+    .service-interactive-main {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 32px;
+      align-items: start;
+      flex: 1;
+    }
+    .service-img-wrap {
+      width: 110px;
+      height: 110px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(197,165,90,0.15);
+      flex-shrink: 0;
+    }
+    .service-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .service-img-placeholder {
+      width: 110px;
+      height: 110px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #E8EAEB, #D5D8DA);
+      border: 1px solid rgba(197,165,90,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold);
+      font-size: 1.6rem;
+    }
+    @media (max-width: 640px) {
+      .service-interactive-item {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0 !important;
+        display: grid !important;
+        grid-template-columns: auto 1fr !important;
+        gap: 32px !important;
+      }
+      .service-img-wrap,
+      .service-img-placeholder { display: none !important; }
+    }
+
+    /* === KIT DERMO FIX — compact === */
+    .kit-compact-card {
+      background: linear-gradient(180deg, #FFFDF7 0%, #FFFFFF 100%);
+      border: 1px solid rgba(197,165,90,0.16);
+      border-radius: 24px;
+      padding: 40px 44px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 16px 50px rgba(0,0,0,0.07);
+    }
+    .kit-compact-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(197,165,90,0.08), transparent 45%);
+      pointer-events: none;
+    }
+    .kit-compact-left { position: relative; z-index: 1; }
+    .kit-compact-kicker {
+      display: inline-flex;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(197,165,90,0.10);
+      color: #e5cf95;
+      border: 1px solid rgba(197,165,90,0.20);
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .kit-compact-title {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 2vw, 2.1rem);
+      font-weight: 800;
+      line-height: 1.18;
+      color: #11161B;
+    }
+    .kit-compact-right { position: relative; z-index: 1; }
+    .kit-compact-items {
+      display: grid;
+      gap: 9px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .kit-compact-items li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: rgba(197,165,90,0.05);
+      border: 1px solid rgba(197,165,90,0.10);
+      color: #3A3C3E;
+      font-size: .88rem;
+      line-height: 1.5;
+    }
+    .kit-compact-items li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+      .kit-compact-card {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+        gap: 20px;
       }
     }
 
@@ -230,15 +408,10 @@
   <section class="hero hero-photo" id="accueil">
     <div class="container">
       <div class="hero-content">
-        <h1 class="hero-title" data-i18n="hero_title"><span class="brand-gold">Scalpcare</span>, expert en tricopigmentation</h1>
+        <h1 class="hero-title" data-i18n="hero_title"><span class="hero-title-line1">Micropigmentation,<br>retrouvez confiance en vous.</span><span class="hero-title-line2">Offrez-vous une solution naturelle et durable pour redensifier votre cuir chevelu.</span></h1>
         <div class="hero-cta">
           <a href="#diagnostic" class="btn btn-primary" data-i18n="hero_cta_rdv">Diagnostic gratuit</a>
           <a href="#services" class="btn btn-outline" data-i18n="hero_cta_discover">Découvrir</a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat"><h3 data-i18n="hero_stat_1_num">500+</h3><p data-i18n="hero_stat_1_label">Clients satisfaits</p></div>
-          <div class="hero-stat"><h3 data-i18n="hero_stat_2_num">7 ans</h3><p data-i18n="hero_stat_2_label">D'expérience</p></div>
-          <div class="hero-stat"><h3 data-i18n="hero_stat_3_num">100%</h3><p data-i18n="hero_stat_3_label">Sur mesure</p></div>
         </div>
       </div>
     </div>
@@ -250,6 +423,71 @@
       <blockquote data-i18n="brand_text">La micropigmentation capillaire est aujourd'hui <strong>la technique de restauration capillaire non chirurgicale la plus efficace</strong> pour celles et ceux qui souhaitent se débarrasser de la calvitie et retrouver volume et densité capillaire. Chez Scalpcare, nous recréons l'effet de cheveux rasés ou très courts, densifions les zones clairsemées et camouflons les cicatrices. <strong>Le résultat est naturel et durable</strong>, grâce à une reproduction fidèle de vos follicules pileux.</blockquote>
       <div class="brand-statement-divider"></div>
       <p class="section-subtitle" style="margin:0 auto;text-align:center" data-i18n="brand_text_2">Que vous souhaitiez retrouver confiance en vous ou redéfinir votre style, notre expertise vous garantit une transformation sur mesure, parfaitement adaptée à vos besoins et attentes.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="bg-alt" id="services">
+    <div class="container">
+      <div class="section-header reveal"><div class="section-label" data-i18n="svc_label">Notre offre</div><h2 class="section-title" data-i18n="svc_title"><span class="title-bold">Des solutions sur mesure</span></h2><p class="section-subtitle" data-i18n="svc_subtitle">Découvrez nos prestations de micropigmentation capillaire.</p></div>
+      <div class="reveal">
+        <div class="service-interactive-item"><div class="service-number">01</div><div class="service-interactive-content"><h3 data-i18n="svc_1_title">Effet Rasé / Shaved Look</h3><p data-i18n="svc_1_desc">Recréation complète d'un look rasé naturel. Idéal pour les hommes souffrant de calvitie avancée. Nous reproduisons fidèlement l'apparence de follicules pileux pour un résultat bluffant.</p></div><div class="service-img-wrap"><img src="img/svc-effet-rase.jpg" alt="Effet rasé - micropigmentation capillaire"></div></div>
+        <div class="service-interactive-item"><div class="service-number">02</div><div class="service-interactive-content"><h3 data-i18n="svc_3_title">Restauration de Cicatrices</h3><p data-i18n="svc_3_desc">Restauration des cicatrices de greffe FUE/FUT ou d'autres interventions. La micropigmentation permet de rendre les cicatrices quasi invisibles en reproduisant la texture capillaire environnante.</p></div><div class="service-img-wrap"><img src="img/svc-cicatrices.jpg" alt="Restauration de cicatrices - micropigmentation capillaire"></div></div>
+        <div class="service-interactive-item"><div class="service-number">03</div><div class="service-interactive-content"><h3 data-i18n="svc_4_title">Densification</h3><p data-i18n="svc_4_desc">Solutions adaptées à tous. Densification des zones clairsemées, traitement de l'alopécie, restitution du volume capillaire. Résultats subtils et naturels.</p></div><div class="service-img-wrap"><img src="img/svc-densification.jpg" alt="Densification capillaire - micropigmentation"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KIT DERMO FIX -->
+  <section class="bg-light" id="kit-dermo-fix" style="padding:72px 0;">
+    <div class="container">
+      <div class="kit-compact-card reveal">
+        <div class="kit-compact-left">
+          <span class="kit-compact-kicker">Accompagnement post-procédure</span>
+          <h2 class="kit-compact-title">Kit Dermo Fix<br>offert lors de la<br>première séance</h2>
+        </div>
+        <div class="kit-compact-right">
+          <ul class="kit-compact-items">
+            <li>Shampooing doux sans sulfates</li>
+            <li>Crème cicatrisante</li>
+            <li>Fiche de suivi</li>
+            <li>Crème matifiante pour l'après cicatrisation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="bg-light" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image reveal"><img src="img/samuel.webp" alt="Scalpcare - Praticien"><div class="about-image-accent"></div></div>
+        <div class="about-content reveal">
+          <div class="section-label" data-i18n="about_label">Qui suis-je</div>
+          <h2 data-i18n="about_title"><span class="title-bold">Votre praticien certifié</span></h2>
+          <p class="about-text" data-i18n="about_text_1">Passionné par la micropigmentation capillaire depuis plus de 7 ans, j'ai développé une expertise unique dans la restauration capillaire non chirurgicale.</p>
+          <p class="about-text" data-i18n="about_text_2">Formé auprès des meilleurs praticiens internationaux, je mets mon savoir-faire au service de chaque client pour des résultats naturels et personnalisés.</p>
+          <p class="about-text" data-i18n="about_text_3">Mon approche est centrée sur l'écoute et la compréhension de vos besoins. Chaque procédure est unique. Je m'engage à vous offrir une communication réactive et un accompagnement personnalisé à chaque étape de votre parcours.</p>
+          <div class="about-signature"><div class="about-signature-name" data-i18n="about_name">Scalpcare</div><div class="about-signature-role" data-i18n="about_role">Praticien certifié — Paris & Barcelona</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PRICING PREVIEW -->
+  <section class="bg-light" id="tarifs-apercu">
+    <div class="container">
+      <div class="section-header center reveal">
+        <div class="section-label" data-i18n="price_preview_label">Tarifs</div>
+        <h2 class="section-title" data-i18n="price_preview_title"><span class="title-bold">Une lecture claire et </span><strong>premium</strong><span class="title-bold"> de nos prestations</span></h2>
+        <p class="section-subtitle" data-i18n="price_preview_subtitle">Visualisez les principales zones traitées, comprenez immédiatement les prestations proposées et accédez à la page dédiée pour découvrir tous les tarifs dans une présentation plus détaillée, plus rassurante et plus haut de gamme.</p>
+      </div>
+      <div class="reveal" style="display:flex;justify-content:center;">
+        <a href="tarifs.html" class="btn btn-primary" data-i18n="price_preview_cta">Voir la page tarifs</a>
+      </div>
     </div>
   </section>
 
@@ -275,88 +513,8 @@
   </section>
 
 
-  <!-- KIT DERMO FIX -->
-  <section class="bg-light kit-highlight" id="kit-dermo-fix">
-    <div class="container">
-      <div class="kit-highlight-card reveal">
-        <div class="kit-highlight-copy">
-          <div class="kit-highlight-kicker">Accompagnement post-procédure</div>
-          <h2 class="kit-highlight-title">Kit Dermo Fix offert lors de la première séance</h2>
-          <p class="kit-highlight-text">Parce qu’un résultat haut de gamme se joue aussi dans les jours qui suivent la séance, un kit post-procédure est remis dès le premier rendez-vous. Il a été pensé pour accompagner la cicatrisation, préserver le pigment et vous offrir un cadre clair, rassurant et professionnel.</p>
-          <div class="kit-highlight-points">
-            <div class="kit-point">
-              <div class="kit-point-icon">+</div>
-              <div><strong>Crème cicatrisante légère et matifiante</strong><span>Une formule choisie pour accompagner la peau sans laisser d’effet brillant sur le cuir chevelu.</span></div>
-            </div>
-            <div class="kit-point">
-              <div class="kit-point-icon">+</div>
-              <div><strong>Shampooing doux sans sulfates</strong><span>Un nettoyage respectueux de la zone traitée, pensé pour préserver le pigment et la qualité du résultat.</span></div>
-            </div>
-            <div class="kit-point">
-              <div class="kit-point-icon">+</div>
-              <div><strong>Fiche de suivi claire et pratique</strong><span>Un repère simple pour savoir quoi faire jour après jour, quoi éviter et quand reprendre une routine normale.</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="kit-highlight-aside">
-          <h3 class="kit-aside-title">Ce que comprend le kit</h3>
-          <ul class="kit-aside-list">
-            <li>Une crème cicatrisante légère et matifiante</li>
-            <li>Un shampooing doux sans sulfates</li>
-            <li>Une fiche claire avec les bons gestes post-procédure</li>
-            <li>Les indications jour par jour pour reprendre sereinement votre routine</li>
-          </ul>
-          <p class="kit-aside-note">Ce kit complète l’accompagnement du cabinet et prolonge la qualité de la procédure dès la première séance.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section class="bg-light" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image reveal"><img src="img/samuel.webp" alt="Scalpcare - Praticien"><div class="about-image-accent"></div></div>
-        <div class="about-content reveal">
-          <div class="section-label" data-i18n="about_label">Qui suis-je</div>
-          <h2 data-i18n="about_title"><span class="title-bold">Votre praticien certifié</span></h2>
-          <p class="about-text" data-i18n="about_text_1">Passionné par la micropigmentation capillaire depuis plus de 7 ans, j'ai développé une expertise unique dans la restauration capillaire non chirurgicale.</p>
-          <p class="about-text" data-i18n="about_text_2">Formé auprès des meilleurs praticiens internationaux, je mets mon savoir-faire au service de chaque client pour des résultats naturels et personnalisés.</p>
-          <p class="about-text" data-i18n="about_text_3">Mon approche est centrée sur l'écoute et la compréhension de vos besoins. Chaque procédure est unique. Je m'engage à vous offrir une communication réactive et un accompagnement personnalisé à chaque étape de votre parcours.</p>
-          <div class="about-signature"><div class="about-signature-name" data-i18n="about_name">Scalpcare</div><div class="about-signature-role" data-i18n="about_role">Praticien certifié — Paris & Barcelona</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="bg-alt" id="services">
-    <div class="container">
-      <div class="section-header reveal"><div class="section-label" data-i18n="svc_label">Notre offre</div><h2 class="section-title" data-i18n="svc_title"><span class="title-bold">Des solutions sur mesure</span></h2><p class="section-subtitle" data-i18n="svc_subtitle">Découvrez nos prestations de micropigmentation capillaire.</p></div>
-      <div class="reveal">
-        <div class="service-interactive-item"><div class="service-number">01</div><div class="service-interactive-content"><h3 data-i18n="svc_1_title">Effet Rasé / Shaved Look</h3><p data-i18n="svc_1_desc">Recréation complète d'un look rasé naturel. Idéal pour les hommes souffrant de calvitie avancée.</p></div></div>
-        <div class="service-interactive-item"><div class="service-number">02</div><div class="service-interactive-content"><h3 data-i18n="svc_2_title">Densification Capillaire</h3><p data-i18n="svc_2_desc">Ajout de densité visuelle dans les zones clairsemées.</p></div></div>
-        <div class="service-interactive-item"><div class="service-number">03</div><div class="service-interactive-content"><h3 data-i18n="svc_3_title">Restauration de Cicatrices</h3><p data-i18n="svc_3_desc">Restauration des cicatrices de greffe FUE/FUT ou d'autres interventions. La micropigmentation permet de rendre les cicatrices quasi invisibles en reproduisant la texture capillaire environnante.</p></div></div>
-        <div class="service-interactive-item"><div class="service-number">04</div><div class="service-interactive-content"><h3 data-i18n="svc_4_title">Densification</h3><p data-i18n="svc_4_desc">Solutions adaptées à tous. Densification des zones clairsemées, traitement de l'alopécie, restitution du volume capillaire.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING PREVIEW -->
-  <section class="bg-light" id="tarifs-apercu">
-    <div class="container">
-      <div class="section-header center reveal">
-        <div class="section-label" data-i18n="price_preview_label">Tarifs</div>
-        <h2 class="section-title" data-i18n="price_preview_title"><span class="title-bold">Une lecture claire et </span><strong>premium</strong><span class="title-bold"> de nos prestations</span></h2>
-        <p class="section-subtitle" data-i18n="price_preview_subtitle">Visualisez les principales zones traitées, comprenez immédiatement les prestations proposées et accédez à la page dédiée pour découvrir tous les tarifs dans une présentation plus détaillée, plus rassurante et plus haut de gamme.</p>
-      </div>
-      <div class="reveal" style="display:flex;justify-content:center;">
-        <a href="tarifs.html" class="btn btn-primary" data-i18n="price_preview_cta">Voir la page tarifs</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG -->
+    <!-- BLOG -->
   <section class="bg-alt" id="blog">
     <div class="container">
       <div class="section-header center reveal">
@@ -377,10 +535,10 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-date">Guide expert</div>
-            <h3>Micropigmentation capillaire : tout ce qu’il faut savoir</h3>
+            <h3>Micropigmentation capillaire : tout ce qu'il faut savoir</h3>
             <p class="blog-card-excerpt"></p>
             <div class="blog-card-actions">
-              <button type="button" class="blog-card-link is-button" data-blog-open="guide"><span>Lire l’article</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+              <button type="button" class="blog-card-link is-button" data-blog-open="guide"><span>Lire l'article</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </article>
@@ -399,24 +557,7 @@
             <h3>Les soins post-procédure : guide complet</h3>
             <p class="blog-card-excerpt"></p>
             <div class="blog-card-actions">
-              <button type="button" class="blog-card-link is-button" data-blog-open="postcare"><span>Lire l’article</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
-            </div>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-card-image">
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#BEC1C4,#A4A8AB);display:flex;align-items:center;justify-content:center">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C5A55A" stroke-width="1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            </div>
-            <span class="blog-card-category">Témoignage</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-date">Retour d’expérience</div>
-            <h3>Comment la SMP a transformé ma confiance</h3>
-            <p class="blog-card-excerpt"></p>
-            <div class="blog-card-actions">
-              <a href="#diagnostic" class="blog-card-link"><span>Nous contacter</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+              <button type="button" class="blog-card-link is-button" data-blog-open="postcare"><span>Lire l'article</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
             </div>
           </div>
         </article>

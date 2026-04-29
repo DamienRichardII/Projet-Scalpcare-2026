@@ -2,7 +2,7 @@ const translations = {
   fr: {
     nav_home:"Accueil", nav_about:"Qui suis-je", nav_services:"Notre Offre", nav_pricing:"Tarifs", nav_beforeafter:"Avant / Après", nav_blog:"Blog", nav_faq:"FAQ",
     hero_label:"Micropigmentation Capillaire — Paris & Barcelona",
-    hero_title:`<span class="title-bold">Scalpcare, expert en tricopigmentation</span>`,
+    hero_title:`<span class="hero-title-line1">Micropigmentation,<br>retrouvez confiance en vous.</span><span class="hero-title-line2">Offrez-vous une solution naturelle et durable pour redensifier votre cuir chevelu.</span>`,
     hero_cta_rdv:"Diagnostic gratuit", hero_cta_discover:"Découvrir",
     hero_stat_1_num:"500+", hero_stat_1_label:"Clients satisfaits", hero_stat_2_num:"7 ans", hero_stat_2_label:"D'expérience", hero_stat_3_num:"100%", hero_stat_3_label:"Sur mesure",
 
@@ -123,7 +123,7 @@ const translations = {
   es: {
     nav_home:"Inicio", nav_about:"Sobre mí", nav_services:"Servicios", nav_pricing:"Tarifas", nav_blog:"Blog", nav_faq:"FAQ",
     hero_label:"Micropigmentación Capilar — París & Barcelona",
-    hero_title:`<span class="title-bold">Scalpcare, experto en tricopigmentación</span>`,
+    hero_title:`<span class="hero-title-line1">Micropigmentación,<br>recupera la confianza en ti mismo.</span><span class="hero-title-line2">Una solución natural y duradera para redensificar tu cuero cabelludo.</span>`,
     hero_cta_rdv:"Diagnóstico gratuito", hero_cta_discover:"Descubrir",
     hero_stat_1_num:"500+", hero_stat_1_label:"Clientes satisfechos", hero_stat_2_num:"7 años", hero_stat_2_label:"De experiencia", hero_stat_3_num:"100%", hero_stat_3_label:"A medida",
 
