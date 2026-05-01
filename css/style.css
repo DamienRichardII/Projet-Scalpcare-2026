@@ -136,7 +136,7 @@ section{padding:var(--section-padding);position:relative}
 .brand-statement{padding:140px 0;background:var(--bg-dark);position:relative;overflow:hidden}
 .brand-statement::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(197,165,90,0.04) 0%,transparent 70%)}
 .brand-statement .container{position:relative;z-index:1;max-width:900px;text-align:center}
-.brand-statement blockquote{font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:300;line-height:1.7;color:var(--nardo-200);font-style:italic}
+.brand-statement blockquote{font-family:var(--font-display);font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:300;line-height:1.7;color:var(--nardo-200);font-style:normal}
 .brand-statement blockquote strong{color:var(--gold);font-weight:500;font-style:normal}
 .brand-statement-divider{width:60px;height:1.5px;background:var(--gold);margin:40px auto}
 .brand-statement .section-subtitle{color:var(--nardo-400)}

@@ -2,7 +2,7 @@ const translations = {
   fr: {
     nav_home:"Accueil", nav_about:"Qui suis-je", nav_services:"Notre Offre", nav_pricing:"Tarifs", nav_beforeafter:"Avant / Après", nav_blog:"Blog", nav_faq:"FAQ",
     hero_label:"Micropigmentation Capillaire — Paris & Barcelona",
-    hero_title:`<span class="hero-title-line1">Micropigmentation,<br>retrouvez confiance en vous.</span><span class="hero-title-line2">Offrez-vous une solution naturelle et durable pour redensifier votre cuir chevelu.</span>`,
+    hero_title:`<span class="hero-title-line1">Micropigmentation,<br>retrouvez confiance en vous.</span>`,
     hero_cta_rdv:"Diagnostic gratuit", hero_cta_discover:"Découvrir",
     hero_stat_1_num:"500+", hero_stat_1_label:"Clients satisfaits", hero_stat_2_num:"7 ans", hero_stat_2_label:"D'expérience", hero_stat_3_num:"100%", hero_stat_3_label:"Sur mesure",
 
@@ -97,10 +97,14 @@ const translations = {
     diag_name:"Votre nom", diag_email:"Votre email", diag_message:"Décrivez brièvement votre besoin", diag_send:"Envoyer ma demande",
     diag_or:"Ou contactez-nous directement",
 
+    ba_badge:"Réalisations", ba_breadcrumb:"Avant / Après",
+    ba_portfolio_label:"Portfolio", ba_portfolio_title:`Book <strong>Photos</strong>`, ba_portfolio_subtitle:"Une lecture claire des résultats obtenus sur différents profils, avec la même exigence de naturel, de précision et de cohérence esthétique.",
+    tarifs_final_title:`Réservez votre <strong>diagnostic gratuit</strong>`, tarifs_final_sub:"Par appel vidéo, envoi de photos ou en présentiel à Paris ou Barcelone.",
+
     footer_desc:"Expert en micropigmentation capillaire. Résultats naturels et durables à Paris et Barcelone. Communication réactive — réponse sous un jour ouvré.",
     footer_nav:"Navigation", footer_legal:"Légal", footer_privacy:"Politique de confidentialité", footer_terms:"Mentions légales",
     footer_locations_title:"Nos cabinets", footer_loc_paris:"Paris", footer_loc_barcelona:"Barcelona",
-    footer_addr_paris:"27 bis rue Charles 4, 94130 Nogent-sur-Marne", footer_addr_barcelona:"Carrer de Roger de Flor, 172, Eixample, 08013 Barcelona, Espagne",
+    footer_addr_paris:"27 bis rue Charles 7, 94130 Nogent-sur-Marne", footer_addr_barcelona:"Carrer de Roger de Flor, 172, Eixample, 08013 Barcelona, Espagne",
     footer_copy:"© 2026 ScalpCare SMP. Tous droits réservés.",
     tarifs_badge:"Tarification transparente", tarifs_breadcrumb_home:"Accueil", tarifs_h1:`Nos <strong>tarifs</strong>`, tarifs_subtitle:"Visualisez en un regard les principales zones traitées et retrouvez chaque prestation dans une présentation plus claire, plus premium et plus rassurante. Diagnostic gratuit inclus.",
     tarifs_card1_num:"Prestation 01", tarifs_card1_title:"Zones 1 à 3 / Effet rasé / Densité", tarifs_card1_price:"300 € – 2 000 €", tarifs_card1_desc:"Selon le travail à réaliser et les zones à restaurer. Une solution sur mesure pour recréer un effet rasé réaliste ou renforcer visuellement la densité.",
@@ -121,9 +125,9 @@ const translations = {
 
   },
   es: {
-    nav_home:"Inicio", nav_about:"Sobre mí", nav_services:"Servicios", nav_pricing:"Tarifas", nav_blog:"Blog", nav_faq:"FAQ",
+    nav_home:"Inicio", nav_about:"Sobre mí", nav_services:"Servicios", nav_pricing:"Tarifas", nav_beforeafter:"Antes / Después", nav_blog:"Blog", nav_faq:"FAQ",
     hero_label:"Micropigmentación Capilar — París & Barcelona",
-    hero_title:`<span class="hero-title-line1">Micropigmentación,<br>recupera la confianza en ti mismo.</span><span class="hero-title-line2">Una solución natural y duradera para redensificar tu cuero cabelludo.</span>`,
+    hero_title:`<span class="hero-title-line1">Micropigmentación,<br>recupera la confianza en ti mismo.</span>`,
     hero_cta_rdv:"Diagnóstico gratuito", hero_cta_discover:"Descubrir",
     hero_stat_1_num:"500+", hero_stat_1_label:"Clientes satisfechos", hero_stat_2_num:"7 años", hero_stat_2_label:"De experiencia", hero_stat_3_num:"100%", hero_stat_3_label:"A medida",
 
@@ -209,10 +213,14 @@ const translations = {
     diag_name:"Su nombre", diag_email:"Su email", diag_message:"Describa brevemente su necesidad", diag_send:"Enviar mi solicitud",
     diag_or:"O contáctenos directamente",
 
+    ba_badge:"Realizaciones", ba_breadcrumb:"Antes / Después",
+    ba_portfolio_label:"Portfolio", ba_portfolio_title:`Book <strong>Fotos</strong>`, ba_portfolio_subtitle:"Una lectura clara de los resultados obtenidos en distintos perfiles, con la misma exigencia de naturalidad, precisión y coherencia estética.",
+    tarifs_final_title:`Reserve su <strong>diagnóstico gratuito</strong>`, tarifs_final_sub:"Por videollamada, envío de fotos o en persona en París o Barcelona.",
+
     footer_desc:"Experto en micropigmentación capilar en París y Barcelona. Comunicación reactiva.",
     footer_nav:"Navegación", footer_legal:"Legal", footer_privacy:"Política de privacidad", footer_terms:"Aviso legal",
     footer_locations_title:"Nuestros gabinetes", footer_loc_paris:"París", footer_loc_barcelona:"Barcelona",
-    footer_addr_paris:"27 bis rue Charles 4, 94130 Nogent-sur-Marne", footer_addr_barcelona:"Carrer de Roger de Flor, 172, Eixample, 08013 Barcelona, España",
+    footer_addr_paris:"27 bis rue Charles 7, 94130 Nogent-sur-Marne", footer_addr_barcelona:"Carrer de Roger de Flor, 172, Eixample, 08013 Barcelona, España",
     footer_copy:"© 2026 ScalpCare SMP. Todos los derechos reservados.",
     tarifs_badge:"Tarificación transparente", tarifs_breadcrumb_home:"Inicio", tarifs_h1:`Nuestras <strong>tarifas</strong>`, tarifs_subtitle:"Visualiza de un vistazo las principales zonas tratadas y encuentra cada tratamiento en una presentación más clara, más premium y más tranquilizadora. Diagnóstico gratuito incluido.",
     tarifs_card1_num:"Tratamiento 01", tarifs_card1_title:"Zonas 1 a 3 / Efecto rapado / Densidad", tarifs_card1_price:"300 € – 2 000 €", tarifs_card1_desc:"Según el trabajo a realizar y las zonas a restaurar. Una solución a medida para recrear un efecto rapado realista o reforzar visualmente la densidad.",
