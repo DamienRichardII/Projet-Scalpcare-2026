@@ -311,11 +311,16 @@ section{padding:var(--section-padding);position:relative}
   .hero-stats{flex-wrap:wrap;gap:32px}
 }
 @media(max-width:720px){
-  .site-header .logo,.site-header .site-logo{width:118px;min-width:118px}
+  .header-inner{padding-left:8px;padding-right:14px;justify-content:space-between}
+  .site-header .logo,.site-header .site-logo{width:auto;min-width:auto;margin-left:0;margin-right:auto;justify-content:flex-start}
   .site-header .logo img,.site-header .site-logo img{width:104px;max-height:56px}
+  .header-actions{margin-left:auto;gap:8px}
   .site-footer .footer-logo img,.site-footer .footer-brand .logo img{width:170px}
   .loader-logo img{width:150px}
   .lang-switch button{padding:6px 8px;font-size:.9rem}
+}
+@media(max-width:480px){
+  .header-inner{padding-left:6px;padding-right:12px}
 }
 @media(max-width:640px){
   .header-inner{padding:0 18px}
